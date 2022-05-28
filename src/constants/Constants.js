@@ -1,7 +1,12 @@
+import Image1 from '../Images/1.png'
+import Image2 from '../Images/2.png'
+import Image3 from '../Images/3.png'
+import Image4 from '../Images/4.png'
+
 export const projects = [{
         title: 'NatureSeeker',
         description: "Full stack web application where users can create profiles, share and comment on posts and search for experiences.",
-        image: '../Images/1.png',
+        image: Image1,
         tags: ['MongoDB', 'Express', 'React', 'Node'],
         source: 'https://github.com/brunash/CapStone-NatureSeeker',
         id: 0,
@@ -9,7 +14,7 @@ export const projects = [{
     {
         title: 'InStock',
         description: "A Warehouse inventory management project. A collaborative project done together with 4 other developers using Jira, Agile methodology and Github.  ",
-        image: '../Images/2.png',
+        image: Image2,
         tags: ['React', 'JavaScript', 'Jira', 'SASS'],
         source: 'https://github.com/brunash/instock-client',
         id: 1,
@@ -17,7 +22,7 @@ export const projects = [{
     {
         title: 'BrainFlix',
         description: "A Youtube kind of app where users can upload, comment, delete and like videos.",
-        image: '../Images/3.png',
+        image: Image3,
         tags: ['JavaScript', 'SASS', 'React'],
         source: 'https://github.com/brunash/brainFlix',
         id: 2,
@@ -25,7 +30,7 @@ export const projects = [{
     {
         title: 'Band-Site',
         description: "This is a web site of an imaginary band. Guests can read other visitors comments, add their own and buy tickets for different concert events.",
-        image: '../Images/4.png',
+        image: Image4,
         tags: ['JavaScript', 'Axios', 'SASS'],
         source: 'https://github.com/brunash/brainStation-bandsite.git',
         id: 3,
