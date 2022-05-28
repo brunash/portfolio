@@ -7,7 +7,10 @@ import { CardActionArea } from '@mui/material';
 import { projects } from '../../constants/Constants';
 import './Projects.scss';
 
+
 const Projects = () => {
+
+
   return (
     <div className='projects'>
     {projects.map(item => 
@@ -31,9 +34,10 @@ const Projects = () => {
           <Typography variant="body2" color="text.secondary">
             {item.description}
           </Typography>
-          {/* <Typography variant="body2" color="text.secondary">
+          <p></p>
+          <Typography variant="body2" color="text.secondary" className='projects__tech'>
             {item.tags}
-          </Typography> */}
+          </Typography>
         </CardContent>
       </CardActionArea>
     </Card></a>)}

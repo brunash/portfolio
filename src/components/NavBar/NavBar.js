@@ -11,7 +11,14 @@ import FormControlLabel from '@mui/material/FormControlLabel';
 import FormGroup from '@mui/material/FormGroup';
 import MenuItem from '@mui/material/MenuItem';
 import Menu from '@mui/material/Menu';
-import { Link } from 'react-router-dom';
+import { Link } from '@mui/material';
+
+const navigationLinks = [
+  { name: 'About', href:'/' },
+  { name: 'Projects', href:'/projects' },
+  { name: 'Contact', href:'/contact' },
+];
+
 
 const NavBar = () => {
 
@@ -33,7 +40,7 @@ const NavBar = () => {
         <Toolbar>
           
          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            Portfolio
+            SZ Portfolio
           </Typography>
           
           {auth && (
@@ -62,10 +69,17 @@ const NavBar = () => {
                 }}
                 open={Boolean(anchorEl)}
                 onClose={() => setAnchorEl(null)}
-              >
-                <MenuItem onClick={() => handleClose('/about')}>About</MenuItem>
+              >{navigationLinks.map((item) => (
+                <MenuItem onClick={() => handleClose}>
+                  <Link 
+                  underline='none'
+                  href={item.href}>
+                    {item.name}
+                  </Link></MenuItem>
+              ))}
+                {/* <MenuItem onClick={() => handleClose('/about')}><Link>{item.name}</Link></MenuItem>
                 <MenuItem onClick={() => handleClose('/projects')}>Projects</MenuItem>
-                <MenuItem onClick={handleClose}>Contact</MenuItem>
+                <MenuItem onClick={handleClose}>Contact</MenuItem> */}
               </Menu>
             </div>
           )}
@@ -74,5 +88,6 @@ const NavBar = () => {
     </Box>
   );
 }
+
 
 export default NavBar;

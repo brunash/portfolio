@@ -1,3 +1,6 @@
+@use './styles/mixins' as *;
+
+
 html {
     background-color: rgba(0, 0, 0, 0.906);
     color: white;

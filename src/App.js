@@ -3,6 +3,8 @@ import NavBar from './components/NavBar/NavBar';
 import {BrowserRouter, Link, Routes, Route } from 'react-router-dom'
 import About from './components/About/About';
 import Projects from './components/Projects/Projects';
+import Contact from './components/Contact/Contact';
+import './styles/_mixins.scss'
 
 
 function App() {
@@ -11,8 +13,9 @@ function App() {
       <BrowserRouter>
         <NavBar/>
         <Routes>
-        <Route path='/about' exact element={<About/>}/>
+        <Route path='/' exact element={<About/>}/>
         <Route path='/projects' exact element={<Projects/>}/>
+        <Route path='/contact' exact element={<Contact/>}/>
         </Routes>
       </BrowserRouter>
     </div>
