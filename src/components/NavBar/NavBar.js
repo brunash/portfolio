@@ -5,13 +5,12 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
-import AccountCircle from '@mui/icons-material/AccountCircle';
-import Switch from '@mui/material/Switch';
-import FormControlLabel from '@mui/material/FormControlLabel';
-import FormGroup from '@mui/material/FormGroup';
 import MenuItem from '@mui/material/MenuItem';
 import Menu from '@mui/material/Menu';
 import { Link } from '@mui/material';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import GitHubIcon from '@mui/icons-material/GitHub';
+
 
 const navigationLinks = [
   { name: 'About', href:'/' },
@@ -36,12 +35,18 @@ const NavBar = () => {
 
   return (
     <Box sx={{ flexGrow: 1 }}>
+      
       <AppBar position="static">
         <Toolbar>
           
-         <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+         <Typography 
+         Typography variant = "h6"
+         component = "div" 
+         sx = {{flexGrow: 1}}
+         >
             SZ Portfolio
           </Typography>
+          
           
           {auth && (
             <div>
@@ -54,6 +59,7 @@ const NavBar = () => {
             sx={{ mr: 2 }}
           >
             <MenuIcon />
+            
           </IconButton>
               <Menu
                 id="menu-appbar"
@@ -77,9 +83,6 @@ const NavBar = () => {
                     {item.name}
                   </Link></MenuItem>
               ))}
-                {/* <MenuItem onClick={() => handleClose('/about')}><Link>{item.name}</Link></MenuItem>
-                <MenuItem onClick={() => handleClose('/projects')}>Projects</MenuItem>
-                <MenuItem onClick={handleClose}>Contact</MenuItem> */}
               </Menu>
             </div>
           )}
