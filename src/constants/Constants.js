@@ -35,6 +35,14 @@ export const projects = [{
         source: 'https://github.com/brunash/brainStation-bandsite.git',
         id: 3,
     },
+    {
+        title: 'Band-Site',
+        description: "This is a web site of an imaginary band. Guests can read other visitors comments, add their own and buy tickets for different concert events.",
+        image: Image4,
+        tags: ['JavaScript ', 'Axios ', 'SASS '],
+        source: 'https://github.com/brunash/brainStation-bandsite.git',
+        id: 3,
+    },
 ];
 
 export const TimeLineData = [{
