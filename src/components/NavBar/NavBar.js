@@ -36,7 +36,10 @@ const NavBar = () => {
   return (
     <Box sx = {{flexGrow: 1}} >
       
-      <AppBar  position = "static" >
+      <AppBar  
+      position = "static"
+      color="default"
+      >
         <Toolbar>
           
          <Typography 
@@ -44,7 +47,7 @@ const NavBar = () => {
          component = "div" 
          sx = {{flexGrow: 1}}
          >
-            SZ Portfolio
+            <Link href='/'>SZ Portfolio</Link>
           </Typography>
           
           

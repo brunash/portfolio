@@ -4,13 +4,13 @@ import './About.scss'
 const About = () => {
     return (
         <div className="container">
-            Hi! 
-            <h2>
-                My name is
-            </h2>
+            Hello, my name is
             <h1>
-                Slobodan Zaja.
+                Slobodan Zaja
             </h1>
+            <h2>
+                I 'm a Software Developer
+            </h2>
             <h3>
                 I'm a Full Stack Web Developer
             </h3>
