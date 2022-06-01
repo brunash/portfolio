@@ -1,5 +1,7 @@
 import React from "react";
 import './About.scss'
+import { imageItems } from '../../constants/Constants';
+import TechStack from "../TechStack/TechStack";
 
 const About = () => {
     return (
@@ -14,6 +16,7 @@ const About = () => {
             <h3>
                 I'm a Full Stack Web Developer
             </h3>
+            <TechStack></TechStack>
         </div>
     )
 }
