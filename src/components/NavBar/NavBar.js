@@ -47,7 +47,9 @@ const NavBar = () => {
          component = "div" 
          sx = {{flexGrow: 1}}
          >
-            <Link href='/'>SZ Portfolio</Link>
+            <Link href='/'
+             style={{ textDecoration: 'none' }}
+            >SZ Portfolio</Link>
           </Typography>
           
           
