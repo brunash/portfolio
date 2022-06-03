@@ -1,7 +1,9 @@
-import Image1 from '../Images/1.png'
-import Image2 from '../Images/2.png'
-import Image3 from '../Images/3.png'
-import Image4 from '../Images/4.png'
+import Image1 from '../Images/1.png';
+import Image2 from '../Images/2.png';
+import Image3 from '../Images/3.png';
+import Image4 from '../Images/4.png';
+import Image5 from '../Images/5.png';
+
 
 export const projects = [{
         title: 'NatureSeeker',
@@ -13,7 +15,7 @@ export const projects = [{
     },
     {
         title: 'InStock',
-        description: "A Warehouse inventory management project. A collaborative project done together with 4 other developers using Jira, Agile methodology and Github.  ",
+        description: "Warehouse inventory management project. A collaborative project done with other developers using Agile methodology.  ",
         image: Image2,
         tags: ['React ', 'JavaScript ', 'Jira ', 'SASS '],
         source: 'https://github.com/brunash/instock-client',
@@ -21,9 +23,9 @@ export const projects = [{
     },
     {
         title: 'BrainFlix',
-        description: "A Youtube kind of app where users can upload, comment, delete and like videos.",
+        description: "A streaming app where users can upload, comment, delete and like videos. Made as part of BrainStation bootcamp",
         image: Image3,
-        tags: ['JavaScript ', 'SASS ', 'React '],
+        tags: ['JavaScript ', 'SASS ', 'React ', 'Axios '],
         source: 'https://github.com/brunash/brainFlix',
         id: 2,
     },
@@ -37,11 +39,13 @@ export const projects = [{
     },
     {
         title: 'Memories',
-        description: "This is a web site of an imaginary band. Guests can read other visitors comments, add their own and buy tickets for different concert events.",
-        image: Image4,
-        tags: ['JavaScript ', 'Axios ', 'SASS '],
+        description: "A simple social media MERN application that allows users to create profiles and to post interesting events that happened in their lives.",
+        image: Image5,
+        tags: ['JavaScript ', 'React ', 'Redux '
+            ,'Express ', 'MongoDB'
+        ],
         source: 'https://github.com/brunash/brainStation-bandsite.git',
-        id: 3,
+        id: 5,
     },
 ];
 
