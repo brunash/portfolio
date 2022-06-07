@@ -49,19 +49,19 @@ export const projects = [{
     },
 ];
 
-export const TimeLineData = [{
-        year: 2015,
-        text: 'Had a first look at the world of coding',
-    },
-    {
-        year: 2021,
-        text: 'Made the decision to switch careers from hospitality to my true passion, software development',
-    },
-    {
-        year: 2022,
-        text: 'Enrolled into BrainStation Web Development Bootcamp',
-    },
-];
+// export const TimeLineData = [{
+//         year: 2015,
+//         text: 'Had a first look at the world of coding',
+//     },
+//     {
+//         year: 2021,
+//         text: 'Made the decision to switch careers from hospitality to my true passion, software development',
+//     },
+//     {
+//         year: 2022,
+//         text: 'Enrolled into BrainStation Web Development Bootcamp',
+//     },
+// ];
 
 export const imageItems = [{
         id: 1,
