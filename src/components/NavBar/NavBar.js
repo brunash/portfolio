@@ -50,6 +50,7 @@ const NavBar = () => {
             <Link href='/'
              style={{ textDecoration: 'none' }}
             >SZ Portfolio</Link>
+            
           </Typography>
           
           
@@ -64,7 +65,7 @@ const NavBar = () => {
             sx={{ mr: 2 }}
           >
             <MenuIcon />
-            
+          
           </IconButton>
               <Menu
                 id="menu-appbar"
