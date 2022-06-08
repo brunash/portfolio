@@ -1,11 +1,15 @@
+@use '../../styles/partials/fonts'as *;
+
 #skills{
     color: black;
     padding: 0 3rem;
     max-width: 600px;
     margin: 0 auto;
     padding-top: 6rem;
-    
+    font-family: 'NotoSans';
 }
+
+
 .skills__container{
     display:grid;
     grid-template-columns: repeat(3, 1fr);
