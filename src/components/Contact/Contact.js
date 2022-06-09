@@ -19,8 +19,8 @@ const Contact= () => {
       e.target.reset();
     };
     return (
-        <section id="contact">
-            <div className='title__container'>
+        <section className="contact">
+            <div className='contact__title--container'>
             <h3 className='contact__title'>Send me a message</h3>
             </div>
             <form ref={form} onSubmit={sendEmail}>

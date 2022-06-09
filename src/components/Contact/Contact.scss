@@ -1,22 +1,32 @@
+@use '../../styles/mixins'as *;
 
 form{
     display: flex;
     flex-direction: column;
     gap: 1.2rem;
+    
+}
+.contact {
+    margin: auto 1rem;
+    font-family: 'NotoSans';
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
+    // width: 90%;
+    @include tablet {
+        display: flex;
+        margin: auto 8rem;
+        // align-items: center;
+        // width: 80%;
+        // margin-top: 5rem;
+    }
+    @include desktop {
+        margin: auto 18rem;
+    }
 }
 
-// input, textarea{
-//     padding: 1.5rem;
-//     border-radius: 8px;
-//     border: 2px solid white;
-//     resize: none;
-//     font-size: 1.2rem;
-//     font-family: 'Roboto', sans-serif;
-//     background-color: #dff2ff;
-//     color: black;
-// }
-
-.title__container {
+.contact__title--container {
     display: flex;
     justify-content: center;
 } 
@@ -32,21 +42,16 @@ form{
     color: #1a87cf;
 }
 
-#contact{
-   max-width: 600px;
-   margin: 0 auto;
-}
+// .links{
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+// }
 
-.links{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.contact__info{
-   padding: 2rem 0;
-}
-.contact__icon{
-    height: 2rem;
-    padding-right: 1rem;
-}
+// .contact__info{
+//    padding: 2rem 0;
+// }
+// .contact__icon{
+//     height: 2rem;
+//     padding-right: 1rem;
+// }
