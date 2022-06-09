@@ -3,7 +3,7 @@ import { imageItems } from '../../constants/Constants';
 
 export default function TechStack() {
     return (
-        <section id="skills">
+        <section className="skills">
             <h1 className='skills__title'>Skills</h1>
             <div className="skills__container">
             {imageItems.map((item) => {
