@@ -48,7 +48,7 @@ const NavBar = () => {
          sx = {{flexGrow: 1}}
          >
             <Link href='/'
-             style={{ textDecoration: 'none' }}
+             style={{ textDecoration: 'none', color: 'black' }}
             >SZ Portfolio</Link>
             
           </Typography>
@@ -68,6 +68,7 @@ const NavBar = () => {
           
           </IconButton>
               <Menu
+                color='black'
                 id="menu-appbar"
                 anchorEl={anchorEl}
                 anchorOrigin={{

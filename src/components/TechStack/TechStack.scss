@@ -5,12 +5,18 @@
     color: black;
     padding-top: 2rem;
     font-family: 'NotoSans';
-    @include tablet {
-    }
     &__container {
     display:grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
+    @include tablet {
+        gap: 2.5rem;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    @include desktop {
+        // gap: 3rem;
+        grid-template-columns: repeat(5, 2fr);
+    }
     }
     &__title{
     font-size: 2rem;
@@ -20,11 +26,12 @@
     &__image{
     object-fit: cover;
     transition: 1s;
+    height: 90px;
     @include tablet {
-        height: 100px;
+        height: 115px;
     }
     @include desktop {
-        height: 185px;
+        height: 175px;
     }
     }
 }

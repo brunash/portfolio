@@ -32,7 +32,7 @@ const Contact= () => {
                 label='Name'
                 sx={{
                 '& > :not(style)': { m: 1 },
-                color: 'primary',
+                color: 'black',
                 }}
                 />
                 <TextField 
@@ -43,7 +43,7 @@ const Contact= () => {
                 label='Email'
                 sx={{
                 '& > :not(style)': { m: 1 },
-                color: 'primary',
+                color: 'black',
                 }}
                 />
                
