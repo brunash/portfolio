@@ -6,6 +6,7 @@ import Button from '../Button/Button'
 import { TextField, Typography } from '@mui/material';
 
 
+
 const Contact= () => {
     const form = useRef();
 
@@ -32,8 +33,12 @@ const Contact= () => {
                 label='Name'
                 sx={{
                 '& > :not(style)': { m: 1 },
-                color: 'black',
+                // color: 'white',
+                input: {
+                    color: 'white'
+                }
                 }}
+            
                 />
                 <TextField 
                 required 
@@ -44,17 +49,23 @@ const Contact= () => {
                 sx={{
                 '& > :not(style)': { m: 1 },
                 color: 'black',
+                input: {
+                    color: 'white',
+                }
                 }}
                 />
                
                 <TextField 
                 multiline 
-                 required 
+                required 
                 type='text'
                 autoComplete="off"
                 sx={{
                 '& > :not(style)': { m: 1 },
                 color: 'primary',
+                input: {
+                    color: 'white',
+                }
                 }}
                 rows={4} name='message' placeholder='Type your message here'/>
                 {/* <button className='button' type='submit'>Send Message</button> */}

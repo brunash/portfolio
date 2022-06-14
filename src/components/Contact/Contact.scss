@@ -4,22 +4,15 @@ form{
     display: flex;
     flex-direction: column;
     gap: 1.2rem;
-    
 }
 .contact {
     margin: auto 1rem;
     font-family: 'NotoSans';
     display: flex;
     flex-direction: column;
-    // justify-content: center;
-    // align-items: center;
-    // width: 90%;
     @include tablet {
         display: flex;
         margin: auto 8rem;
-        // align-items: center;
-        // width: 80%;
-        // margin-top: 5rem;
     }
     @include desktop {
         margin: auto 18rem;
@@ -39,19 +32,5 @@ form{
     font-size: 2rem;
     font-weight: bold;
     margin-bottom: 1.5rem;
-    color: #1a87cf;
+    color: white;
 }
-
-// .links{
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-// }
-
-// .contact__info{
-//    padding: 2rem 0;
-// }
-// .contact__icon{
-//     height: 2rem;
-//     padding-right: 1rem;
-// }
