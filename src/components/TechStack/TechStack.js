@@ -1,6 +1,7 @@
 import './TechStack.scss';
 import { imageItems } from '../../constants/Constants';
 
+
 export default function TechStack() {
     return (
         <section className="skills">

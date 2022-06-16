@@ -4,6 +4,8 @@ import emailjs from 'emailjs-com';
 import { Link } from 'react-router-dom';
 import Button from '../Button/Button'
 import { TextField, Typography } from '@mui/material';
+import { motion } from 'framer-motion';
+import { useEffect, useState } from 'react';
 
 
 
@@ -19,6 +21,48 @@ const Contact= () => {
         
       e.target.reset();
     };
+
+    const [mousePosition, setMousePosition] = useState({
+        x: 0,
+        y: 5
+    });
+    const [cursorVariant, setCursorVariant] = useState("default");
+
+
+    useEffect(() => {
+        const mouseMove = e => {
+            setMousePosition({
+                x: e.clientX,
+                y: e.clientY
+            })
+        }
+
+        window.addEventListener("mousemove", mouseMove);
+
+        return () => {
+            window.removeEventListener("mousemove", mouseMove);
+        }
+    }, []);
+
+    const variants = {
+        default: {
+            x: mousePosition.x - 15,
+            y: mousePosition.y - 16,
+            backgroundColor: "yellow"
+        },
+        text: {
+            height: 75,
+            width: 75,
+            x: mousePosition.x - 50,
+            y: mousePosition.y - 50,
+            backgroundColor: "pink",
+            mixBlendMode: "overlay"
+        }
+    }
+
+    const textEnter = () => setCursorVariant("text");
+    const textLeave = () => setCursorVariant("default");
+
     return (
         <section className="contact">
             <div className='contact__title--container'>
@@ -51,6 +95,7 @@ const Contact= () => {
                 color: 'black',
                 input: {
                     color: 'white',
+                    background: 'inherit'
                 }
                 }}
                 />

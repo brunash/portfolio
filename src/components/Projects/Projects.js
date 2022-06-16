@@ -6,21 +6,27 @@ import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
 import { projects } from '../../constants/Constants';
 import './Projects.scss';
+import { useState, useEffect } from 'react';
+import { motion } from 'framer-motion';
 
 
 const Projects = () => {
 
+  
 
   return (
-    <div className='projects'>
+    
+    <div className = 'projects'>
     {projects.map(item => 
     <a 
     href = {item.source}
     key={item.id}
     className='projects__cards'
     >
+      
     <Card sx={{maxWidth: 345}} >
-      <CardActionArea>
+      
+      <CardActionArea CardActionArea>
         <CardMedia
           component = "img"
           height="160"
@@ -28,6 +34,7 @@ const Projects = () => {
          // alt="green iguana"
         />
         <CardContent>
+          
           <Typography gutterBottom variant="h5" component="div">
             {item.title}
           </Typography>
