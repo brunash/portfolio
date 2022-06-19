@@ -1,5 +1,7 @@
+$primary-color: #ffd700;
 @use './styles/mixins' as *;
 @use './styles/partials/fonts'as *;
+@import 'animate.css';
 
 
 
@@ -15,3 +17,14 @@ html {
     // background-position: center;
     // background-size: cover;
 }
+
+.text-zone {
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 35%;
+    vertical-align: middle;
+    display: table-cell;
+    max-height: 90%;
+  }

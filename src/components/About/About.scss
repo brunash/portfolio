@@ -16,8 +16,15 @@
         display: flex;
         flex-direction: column;
     }
+    &__name {
+        font-size: 3rem;
+        height: 5rem;
+    }
 }
-
+.container__name {
+    font-size: 3rem;
+    // height: 5rem;
+}
 .social {
     transition: 2s ease;
     color: white;
