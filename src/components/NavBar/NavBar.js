@@ -1,29 +1,25 @@
-import * as React from 'react';
-import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
-import Toolbar from '@mui/material/Toolbar';
-import Typography from '@mui/material/Typography';
-import IconButton from '@mui/material/IconButton';
-import MenuIcon from '@mui/icons-material/Menu';
-import MenuItem from '@mui/material/MenuItem';
-import Menu from '@mui/material/Menu';
-import { Link } from '@mui/material';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import GitHubIcon from '@mui/icons-material/GitHub';
-
+import * as React from "react";
+import AppBar from "@mui/material/AppBar";
+import Box from "@mui/material/Box";
+import Toolbar from "@mui/material/Toolbar";
+import Typography from "@mui/material/Typography";
+import IconButton from "@mui/material/IconButton";
+import MenuIcon from "@mui/icons-material/Menu";
+import MenuItem from "@mui/material/MenuItem";
+import Menu from "@mui/material/Menu";
+import { Link } from "@mui/material";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import GitHubIcon from "@mui/icons-material/GitHub";
 
 const navigationLinks = [
-  { name: 'About', href:'/' },
-  { name: 'Projects', href:'/projects' },
-  { name: 'Contact', href:'/contact' },
+  { name: "About", href: "/" },
+  { name: "Projects", href: "/projects" },
+  { name: "Contact", href: "/contact" },
 ];
 
-
 const NavBar = () => {
-
   const [auth, setAuth] = React.useState(true);
   const [anchorEl, setAnchorEl] = React.useState(null);
-
 
   const handleMenu = (event) => {
     setAnchorEl(event.currentTarget);
@@ -34,27 +30,48 @@ const NavBar = () => {
   };
 
   return (
-    <Box sx = {{flexGrow: 1}} >
-      
-      <AppBar  
-      position = "static"
-      color="default"
-      >
+    <Box sx={{ flexGrow: 1 }}>
+      <AppBar position="static" color="default">
         <Toolbar>
-          
-         <Typography 
-         Typography variant = "h6"
-         component = "div" 
-         sx = {{flexGrow: 1}}
-         >
-            <Link href='/'
-             style={{ textDecoration: 'none', color: 'black' }}
-            >SZ Portfolio</Link>
-            
+          <Typography
+            Typography
+            variant="h6"
+            component="div"
+            sx={{ flexGrow: 1 }}
+          >
+            <Link href="/" style={{ textDecoration: "none", color: "black" }}>
+              SZ Portfolio
+            </Link>
           </Typography>
           
-          
-          {auth && (
+            <Link
+              href="/"
+              style={{
+                textDecoration: "none",
+                color: "black",
+                marginRight: "1rem",
+              }}
+            >
+              About
+            </Link>
+            <Link
+              href="/projects"
+              style={{
+                textDecoration: "none",
+                color: "black",
+                marginRight: "1rem",
+              }}
+            >
+              Projects
+            </Link>
+            <Link
+              href="/contact"
+              style={{ textDecoration: "none", color: "black" }}
+            >
+              Contact me
+            </Link>
+      
+          {/* {auth && (
             <div>
               <IconButton
               onClick={handleMenu}
@@ -92,12 +109,11 @@ const NavBar = () => {
               ))}
               </Menu>
             </div>
-          )}
+          )} */}
         </Toolbar>
       </AppBar>
     </Box>
   );
-}
-
+};
 
 export default NavBar;
