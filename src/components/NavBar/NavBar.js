@@ -10,6 +10,10 @@ import Menu from "@mui/material/Menu";
 import { Link } from "@mui/material";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
+import './NavBar.scss'
+import { useState, useEffect } from 'react';
+import AnimatedLetters from "../AnimatedLetters/AnimatedLetters";
+
 
 const navigationLinks = [
   { name: "About", href: "/" },
@@ -17,7 +21,19 @@ const navigationLinks = [
   { name: "Contact", href: "/contact" },
 ];
 
+
+
 const NavBar = () => {
+
+  const [letterClass, setLetterClass] = useState("text-animate");
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLetterClass("text-animate-hover");
+    }, 1500);
+  }, []);
+
+
   const [auth, setAuth] = React.useState(true);
   const [anchorEl, setAnchorEl] = React.useState(null);
 
@@ -43,7 +59,7 @@ const NavBar = () => {
               SZ Portfolio
             </Link>
           </Typography>
-          
+          <div className="nav-right">
             <Link
               href="/"
               style={{
@@ -51,8 +67,18 @@ const NavBar = () => {
                 color: "black",
                 marginRight: "1rem",
               }}
-            >
-              About
+            >About
+              {/* <AnimatedLetters
+                letterClass={letterClass}
+                strArray={[
+                  "A",
+                  "B",
+                  "O",
+                  "U",
+                  "T",
+                ]}
+                idx={15}
+              /> */}
             </Link>
             <Link
               href="/projects"
@@ -70,46 +96,45 @@ const NavBar = () => {
             >
               Contact me
             </Link>
-      
-          {/* {auth && (
-            <div>
-              <IconButton
+          </div>
+          {/* {auth && ( */}
+          <div className="hamburger">
+            <IconButton
               onClick={handleMenu}
-            size="large"
-            edge="start"
-            color="inherit"
-            aria-label="menu"
-            sx={{ mr: 2 }}
-          >
-            <MenuIcon />
-          
-          </IconButton>
-              <Menu
-                color='black'
-                id="menu-appbar"
-                anchorEl={anchorEl}
-                anchorOrigin={{
-                  vertical: 'top',
-                  horizontal: 'right',
-                }}
-                keepMounted
-                transformOrigin={{
-                  vertical: 'top',
-                  horizontal: 'right',
-                }}
-                open={Boolean(anchorEl)}
-                onClose={() => setAnchorEl(null)}
-              >{navigationLinks.map((item) => (
+              size="large"
+              edge="start"
+              color="inherit"
+              aria-label="menu"
+              sx={{ mr: 2 }}
+            >
+              <MenuIcon />
+            </IconButton>
+            <Menu
+              color="black"
+              id="menu-appbar"
+              anchorEl={anchorEl}
+              anchorOrigin={{
+                vertical: "top",
+                horizontal: "right",
+              }}
+              keepMounted
+              transformOrigin={{
+                vertical: "top",
+                horizontal: "right",
+              }}
+              open={Boolean(anchorEl)}
+              onClose={() => setAnchorEl(null)}
+            >
+              {navigationLinks.map((item) => (
                 <MenuItem onClick={() => handleClose}>
-                  <Link 
-                  underline='none'
-                  href={item.href}>
+                  <Link underline="none" href={item.href}>
                     {item.name}
-                  </Link></MenuItem>
+                  </Link>
+                </MenuItem>
               ))}
-              </Menu>
-            </div>
-          )} */}
+            </Menu>
+          </div>
+          {/* )} */}
         </Toolbar>
       </AppBar>
     </Box>

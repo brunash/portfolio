@@ -9,7 +9,7 @@ import { useEffect, useState } from 'react';
 
 
 
-const Contact= () => {
+const Contact = () => {
     const form = useRef();
 
     const sendEmail = (e) => {

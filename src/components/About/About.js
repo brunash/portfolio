@@ -14,6 +14,8 @@ let iconStyles = {
 };
 
 const About = () => {
+
+
   const [letterClass, setLetterClass] = useState("text-animate");
 
   useEffect(() => {
@@ -21,6 +23,9 @@ const About = () => {
       setLetterClass("text-animate-hover");
     }, 3000);
   }, []);
+
+
+
 
   const [mousePosition, setMousePosition] = useState({
     x: 0,
@@ -45,6 +50,8 @@ const About = () => {
 
   const variants = {
     default: {
+      height: 15,
+      width: 15,
       x: mousePosition.x - 15,
       y: mousePosition.y - 16,
       backgroundColor: "yellow",
@@ -66,8 +73,8 @@ const About = () => {
     <main
       main
       className="container"
-      onMouseEnter={textEnter}
-      onMouseLeave={textLeave}
+      // onMouseEnter={textEnter}
+      // onMouseLeave={textLeave}
     >
       <motion.div
         className="cursor"
@@ -77,8 +84,8 @@ const About = () => {
       <div div className="container__information">
         <section
           className="container__about"
-          onMouseEnter={textEnter}
-          onMouseLeave={textLeave}
+          // onMouseEnter={textEnter}
+          // onMouseLeave={textLeave}
         >
           <p>Hello, my name is</p>
 
@@ -103,14 +110,12 @@ const About = () => {
               idx={15}
             />
           </div>
-          <h2>I 'm a Software Developer</h2>
-
-          <h3>I'm a Full Stack Web Developer</h3>
+          <h2>I am a Web Developer</h2>
         </section>
         <div
           className="container__logos"
-          onMouseEnter={textEnter}
-          onMouseLeave={textLeave}
+          // onMouseEnter={textEnter}
+          // onMouseLeave={textLeave}
         >
           <a a href="https://www.linkedin.com/in/slobodanzaja">
             {" "}
