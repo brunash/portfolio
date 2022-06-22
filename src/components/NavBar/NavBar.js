@@ -10,10 +10,9 @@ import Menu from "@mui/material/Menu";
 import { Link } from "@mui/material";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
-import './NavBar.scss'
-import { useState, useEffect } from 'react';
+import "./NavBar.scss";
+import { useState, useEffect } from "react";
 import AnimatedLetters from "../AnimatedLetters/AnimatedLetters";
-
 
 const navigationLinks = [
   { name: "About", href: "/" },
@@ -21,10 +20,7 @@ const navigationLinks = [
   { name: "Contact", href: "/contact" },
 ];
 
-
-
 const NavBar = () => {
-
   const [letterClass, setLetterClass] = useState("text-animate");
 
   useEffect(() => {
@@ -32,7 +28,6 @@ const NavBar = () => {
       setLetterClass("text-animate-hover");
     }, 1500);
   }, []);
-
 
   const [auth, setAuth] = React.useState(true);
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -67,7 +62,8 @@ const NavBar = () => {
                 color: "black",
                 marginRight: "1rem",
               }}
-            >About
+            >
+              About
               {/* <AnimatedLetters
                 letterClass={letterClass}
                 strArray={[
