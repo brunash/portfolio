@@ -8,7 +8,7 @@ import { projects } from "../../constants/Constants";
 import "./Projects.scss";
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import MouseEffect from "../MouseEffect/MouseEffect";
+
 
 const Projects = () => {
   return (
