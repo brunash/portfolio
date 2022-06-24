@@ -1,10 +1,8 @@
 import React from "react";
 import "./About.scss";
-import { imageItems } from "../../constants/Constants";
 import TechStack from "../TechStack/TechStack";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
-import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import AnimatedLetters from "../AnimatedLetters/AnimatedLetters";
