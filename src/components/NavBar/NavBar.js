@@ -76,16 +76,18 @@ const NavBar = () => {
                 idx={15}
               /> */}
             </Link>
-            <Link
+            {/* <Link
               href="/projects"
               style={{
                 textDecoration: "none",
                 color: "black",
                 marginRight: "1rem",
               }}
-            >
+            > */}
+            <a href="/projects">
               Projects
-            </Link>
+            </a>
+            {/* </Link> */}
             <Link
               href="/contact"
               style={{ textDecoration: "none", color: "black" }}
