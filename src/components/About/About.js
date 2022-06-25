@@ -69,7 +69,6 @@ const About = () => {
 
   return (
     <main
-      main
       className="container"
       // onMouseEnter={textEnter}
       // onMouseLeave={textLeave}
@@ -79,7 +78,7 @@ const About = () => {
         variants={variants}
         animate={cursorVariant}
       />
-      <div div className="container__information">
+      <div className="container__information">
         <section
           className="container__about"
           // onMouseEnter={textEnter}
