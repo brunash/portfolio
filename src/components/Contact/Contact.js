@@ -1,9 +1,8 @@
 import './Contact.scss';
 import React, { useRef } from 'react';
 import emailjs from 'emailjs-com';
-import { Link } from 'react-router-dom';
 import Button from '../Button/Button'
-import { TextField, Typography } from '@mui/material';
+import { TextField } from '@mui/material';
 import { motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
 
@@ -78,7 +77,6 @@ const Contact = () => {
                 label='Name'
                 sx={{
                 '& > :not(style)': { m: 1 },
-                // color: 'white',
                 input: {
                     color: 'white'
                 }

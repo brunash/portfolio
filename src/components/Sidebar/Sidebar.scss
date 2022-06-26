@@ -1,5 +1,7 @@
+@use '../../styles/colors'as*;
+
 .nav-bar {
-    background: #181818;
+    background: $dark-purple;
     width: 4rem;
     height: 100%;
     position: fixed;
@@ -34,7 +36,7 @@
   
       a {
         font-size: 22px;
-        color: #4d4d4e;
+        color: $dark-red;
         display: block;
         line-height: 51px;
         height: 51px;
@@ -46,7 +48,7 @@
         }
   
         &:hover {
-          color: #ffd700;
+          color: $linen;
   
           svg {
             opacity: 0;
@@ -98,7 +100,7 @@
   
       a.active {
         svg {
-          color: red;
+          color: $maximum-blue-purple;
         }
       }
     }

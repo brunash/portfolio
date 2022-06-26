@@ -6,8 +6,6 @@ import Typography from "@mui/material/Typography";
 import { CardActionArea } from "@mui/material";
 import { projects } from "../../constants/Constants";
 import "./Projects.scss";
-import { useState, useEffect } from "react";
-import { motion } from "framer-motion";
 
 
 const Projects = () => {
@@ -21,7 +19,6 @@ const Projects = () => {
                 component="img"
                 height="160"
                 image={item.image}
-                // alt="green iguana"
               />
               <CardContent>
                 <Typography gutterBottom variant="h5" component="div">

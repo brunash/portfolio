@@ -1,5 +1,4 @@
 import './main.scss';
-import NavBar from './components/NavBar/NavBar';
 import {BrowserRouter, Routes, Route } from 'react-router-dom'
 import About from './components/About/About';
 import Projects from './components/Projects/Projects';
@@ -11,7 +10,6 @@ function App() {
   return (
     <div>
       <BrowserRouter>
-        {/* <NavBar/> */}
         <Sidebar/>
         <Routes>
         <Route path='/' exact element={<About/>}/>

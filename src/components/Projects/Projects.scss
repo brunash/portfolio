@@ -1,5 +1,5 @@
 @use '../../styles/mixins' as *;
-
+@use '../../styles/colors' as *;
 .cursor {
   background-color: #111;
   height: 32px;
@@ -26,6 +26,7 @@
     display: flex;
     margin: 5rem 0 2rem 4rem;
     width: 17rem;
+    color: $dark-red;
     transition: all 1s ease;
     box-shadow: rgba(255, 214, 214, 0.25) 0px 54px 55px, 
     rgba(0, 0, 0, 0.12) 0px -12px 30px, 

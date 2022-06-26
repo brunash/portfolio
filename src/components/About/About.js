@@ -1,3 +1,4 @@
+import "../../styles/_colors.scss"
 import React from "react";
 import "./About.scss";
 import TechStack from "../TechStack/TechStack";
@@ -104,7 +105,7 @@ const About = () => {
                 "J",
                 "A"
               ]}
-              idx={15}
+              idx={1}
             />
           </div>
           <h3>A Front-End Web Developer</h3>
