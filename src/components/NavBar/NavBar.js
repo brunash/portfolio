@@ -13,6 +13,8 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import "./NavBar.scss";
 import { useState, useEffect } from "react";
 import AnimatedLetters from "../AnimatedLetters/AnimatedLetters";
+import SZlogo from '../../Images/SZlogo.png'
+
 
 const navigationLinks = [
   { name: "About", href: "/" },
@@ -41,10 +43,11 @@ const NavBar = () => {
   };
 
   return (
-    <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static" color="default">
+    <Box sx={{ flexGrow: 1, }}>
+      <AppBar position="static" sx={{ backgroundColor: "#6521ff" }} >
         <Toolbar>
-          <Typography
+          <img src={SZlogo} className='nav__logo'/>
+          {/* <Typography
             Typography
             variant="h6"
             component="div"
@@ -53,7 +56,7 @@ const NavBar = () => {
             <Link href="/" style={{ textDecoration: "none", color: "black" }}>
               SZ Portfolio
             </Link>
-          </Typography>
+          </Typography> */}
           <div className="nav-right">
             <Link
               href="/"
@@ -76,18 +79,16 @@ const NavBar = () => {
                 idx={15}
               /> */}
             </Link>
-            {/* <Link
+            <Link
               href="/projects"
               style={{
                 textDecoration: "none",
                 color: "black",
                 marginRight: "1rem",
               }}
-            > */}
-            <a href="/projects">
+            >
               Projects
-            </a>
-            {/* </Link> */}
+            </Link>
             <Link
               href="/contact"
               style={{ textDecoration: "none", color: "black" }}
