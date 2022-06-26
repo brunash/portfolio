@@ -44,7 +44,7 @@ export const projects = [{
         tags: ['JavaScript ', 'React ', 'Redux '
             ,'Express ', 'MongoDB'
         ],
-        source: 'https://github.com/brunash/brainStation-bandsite.git',
+        source: 'https://github.com/brunash/memories-project',
         id: 5,
     },
 ];

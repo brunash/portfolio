@@ -68,8 +68,9 @@ const Contact = () => {
             <div className='contact__title--container'>
             <h3 className='contact__title'>Send me a message</h3>
             </div>
-            <form ref={form} onSubmit={sendEmail}>
+            <form ref={form} onSubmit={sendEmail} className="contact__form">
                 <TextField 
+                className='contact__input'
                 required 
                 type='text' 
                 name='name' 
@@ -85,7 +86,8 @@ const Contact = () => {
             
                 />
                 <TextField 
-                required 
+                required
+                className='contact__input' 
                 type='email' 
                 name='email' 
                 autoComplete="off"
@@ -103,6 +105,7 @@ const Contact = () => {
                 <TextField 
                 multiline 
                 required 
+                className='contact__input'
                 type='text'
                 autoComplete="off"
                 sx={{

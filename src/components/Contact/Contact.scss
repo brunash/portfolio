@@ -6,16 +6,25 @@ form{
     gap: 1.2rem;
 }
 .contact {
-    margin: auto 1rem;
+    // margin: auto 1rem auto 3rem;
+    margin-left: 5rem;
     font-family: 'NotoSans';
     display: flex;
     flex-direction: column;
+    width: 100%;
+
     @include tablet {
         display: flex;
         margin: auto 8rem;
     }
     @include desktop {
         margin: auto 18rem;
+    }
+    // &__form {
+    //     width: 20rem;
+    // }
+    &__input {
+        width: 75%;
     }
 }
 
