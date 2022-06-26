@@ -24,14 +24,17 @@
     &__cards {
     text-decoration: none;
     display: flex;
-    margin: 5rem 0 2rem 0;
-    width: 20rem;
+    margin: 5rem 0 2rem 3rem;
+    width: 17rem;
     transition: all 1s ease;
     box-shadow: rgba(255, 214, 214, 0.25) 0px 54px 55px, 
     rgba(0, 0, 0, 0.12) 0px -12px 30px, 
     rgba(0, 0, 0, 0.12) 0px 4px 6px, 
     rgba(255, 255, 255, 0.17) 0px 12px 13px, 
     rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    @include tablet {
+        width: 20rem;
+    }
 }
 }
 
