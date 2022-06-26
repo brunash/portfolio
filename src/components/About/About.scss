@@ -9,19 +9,19 @@
     margin-left: 3rem;
     width:100%;
     text-align: center;
+    font-size: 1rem;
     @include tablet {
         text-align: left;
         width: 100%;
         display: flex;
         align-items: center;
-        // justify-content: center;
     }
     &__information {
-        width: 100%;
+        width: 75%;
+        font-size: 1rem;
         display: flex;
         flex-direction: column;
         align-items: center;
-        // justify-content: space-around;
         @include tablet {
            display: flex;
             flex-direction: row;
@@ -30,8 +30,6 @@
         }
     }
     &__logos {
-        // display: flex;
-        // flex-direction: column;
         margin-top: 1rem;
         @include tablet {
          display: flex;
@@ -40,13 +38,9 @@
         }
     }
     &__name {
-        font-size: 3rem;
-        height: 5rem;
+        font-size: 1.85rem;
+        height: 4rem;
     }
-}
-.container__name {
-    font-size: 3rem;
-    // height: 5rem;
 }
 .social {
     transition: 2s ease;

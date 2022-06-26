@@ -107,7 +107,7 @@ const About = () => {
               idx={15}
             />
           </div>
-          <h2>A Front-End Web Developer</h2>
+          <h3>A Front-End Web Developer</h3>
           <p>I enjoy building exceptional digital experiences.</p>
         </section>
         <div
