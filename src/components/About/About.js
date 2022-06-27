@@ -53,7 +53,7 @@ const About = () => {
       width: 15,
       x: mousePosition.x - 15,
       y: mousePosition.y - 16,
-      backgroundColor: "yellow",
+      backgroundColor: "#a594f9ff",
     },
     text: {
       height: 75,
