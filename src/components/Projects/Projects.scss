@@ -1,5 +1,6 @@
 @use '../../styles/mixins' as *;
 @use '../../styles/colors' as *;
+
 .cursor {
   background-color: #111;
   height: 32px;
@@ -20,7 +21,11 @@
     gap: 1.5rem;
     @include tablet {
         display: grid;
-        place-items: center
+        place-items: center;
+        margin: 3rem 3rem;
+    }
+    @include desktop {
+        margin: 3rem 4rem;
     }
     &__cards {
     text-decoration: none;

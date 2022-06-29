@@ -3,7 +3,6 @@ import React, { useRef } from 'react';
 import emailjs from 'emailjs-com';
 import Button from '../Button/Button'
 import { TextField } from '@mui/material';
-import { motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
 
 

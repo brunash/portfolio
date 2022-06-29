@@ -14,13 +14,15 @@ form{
     display: flex;
     flex-direction: column;
     width: 75%;
-
+    height: 100%;
     @include tablet {
         display: flex;
-        margin: auto 8rem;
+        justify-content: center;
+        margin: 6rem 9rem;
     }
     @include desktop {
-        margin: auto 18rem;
+        margin: 4rem auto;
+        justify-content: center;
     }
 }
 
