@@ -10,37 +10,38 @@ import "./Projects.scss";
 
 const Projects = () => {
   return (
-    <div className="projects">
-      {projects.map((item) => (
-        <a href={item.source} key={item.id} className="projects__cards">
-          <Card sx={{ maxWidth: 345 }}>
-            <CardActionArea CardActionArea>
-              <CardMedia
-                component="img"
-                height="160"
-                image={item.image}
-              />
-              <CardContent>
-                <Typography gutterBottom variant="h5" component="div">
-                  {item.title}
-                </Typography>
-                <Typography variant="body2" color="text.secondary">
-                  {item.description}
-                </Typography>
-                <p></p>
-                <Typography
-                  variant="body2"
-                  color="text.secondary"
-                  className="projects__tech"
-                >
-                  {item.tags}
-                </Typography>
-              </CardContent>
-            </CardActionArea>
-          </Card>
-        </a>
-      ))}
-    </div>
+    <>
+      <div className="projects__title">
+        <h1>Portfolio</h1>
+      </div>
+      <div className="projects">
+        {projects.map((item) => (
+          <a href={item.source} key={item.id} className="projects__cards">
+            <Card sx={{ maxWidth: 345 }}>
+              <CardActionArea CardActionArea>
+                <CardMedia component="img" height="160" image={item.image} />
+                <CardContent>
+                  <Typography gutterBottom variant="h5" component="div">
+                    {item.title}
+                  </Typography>
+                  <Typography variant="body2" color="text.secondary">
+                    {item.description}
+                  </Typography>
+                  <p></p>
+                  <Typography
+                    variant="body2"
+                    color="text.secondary"
+                    className="projects__tech"
+                  >
+                    {item.tags}
+                  </Typography>
+                </CardContent>
+              </CardActionArea>
+            </Card>
+          </a>
+        ))}
+      </div>
+    </>
   );
 };
 

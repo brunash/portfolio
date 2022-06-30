@@ -42,7 +42,8 @@
     @include tablet {
         width: 20rem;
     }
-}
+    
+    }
 }
 
 .projects__cards:hover {
@@ -50,4 +51,9 @@
     z-index: 2;
     transition: 2s;
 }
-
+.projects__title {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

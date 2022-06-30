@@ -15,58 +15,58 @@ let iconStyles = {
 const About = () => {
 
 
-  const [letterClass, setLetterClass] = useState("text-animate");
+  // const [letterClass, setLetterClass] = useState("text-animate");
 
-  useEffect(() => {
-    setTimeout(() => {
-      setLetterClass("text-animate-hover");
-    }, 3000);
-  }, []);
-
-
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     setLetterClass("text-animate-hover");
+  //   }, 3000);
+  // }, []);
 
 
-  const [mousePosition, setMousePosition] = useState({
-    x: 0,
-    y: 5,
-  });
-  const [cursorVariant, setCursorVariant] = useState("default");
 
-  useEffect(() => {
-    const mouseMove = (e) => {
-      setMousePosition({
-        x: e.clientX,
-        y: e.clientY,
-      });
-    };
 
-    window.addEventListener("mousemove", mouseMove);
+  // const [mousePosition, setMousePosition] = useState({
+  //   x: 0,
+  //   y: 5,
+  // });
+  // const [cursorVariant, setCursorVariant] = useState("default");
 
-    return () => {
-      window.removeEventListener("mousemove", mouseMove);
-    };
-  }, []);
+  // useEffect(() => {
+  //   const mouseMove = (e) => {
+  //     setMousePosition({
+  //       x: e.clientX,
+  //       y: e.clientY,
+  //     });
+  //   };
 
-  const variants = {
-    default: {
-      height: 15,
-      width: 15,
-      x: mousePosition.x - 15,
-      y: mousePosition.y - 16,
-      backgroundColor: "#a594f9ff",
-    },
-    text: {
-      height: 75,
-      width: 75,
-      x: mousePosition.x - 50,
-      y: mousePosition.y - 50,
-      backgroundColor: "pink",
-      mixBlendMode: "overlay",
-    },
-  };
+  //   window.addEventListener("mousemove", mouseMove);
 
-  const textEnter = () => setCursorVariant("text");
-  const textLeave = () => setCursorVariant("default");
+  //   return () => {
+  //     window.removeEventListener("mousemove", mouseMove);
+  //   };
+  // }, []);
+
+  // const variants = {
+  //   default: {
+  //     height: 15,
+  //     width: 15,
+  //     x: mousePosition.x - 15,
+  //     y: mousePosition.y - 16,
+  //     backgroundColor: "#a594f9ff",
+  //   },
+  //   text: {
+  //     height: 75,
+  //     width: 75,
+  //     x: mousePosition.x - 50,
+  //     y: mousePosition.y - 50,
+  //     backgroundColor: "pink",
+  //     mixBlendMode: "overlay",
+  //   },
+  // };
+
+  // const textEnter = () => setCursorVariant("text");
+  // const textLeave = () => setCursorVariant("default");
 
   return (
     <main
@@ -108,8 +108,9 @@ const About = () => {
               idx={3}
             />
           </div>
-          <h3>A Front-End Web Developer</h3>
-          <p>I enjoy building exceptional digital experiences.</p>
+          <h3>I am a Front-End Web Developer</h3>
+          <p>
+          </p>
         </section>
         <div
           className="container__logos"
