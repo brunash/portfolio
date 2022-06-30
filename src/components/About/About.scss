@@ -19,6 +19,9 @@
     &__about {
         width: 100%;
         justify-content: space-around;
+        @include tablet {
+            line-height: 3rem;
+        }
     }
     &__information {
         width: 75%;
@@ -32,11 +35,12 @@
             align-items: center;
             justify-content: center;
         }
+        
     }
     &__logos {
         margin-top: 1rem;
         @include tablet {
-         display: flex;
+        display: flex;
         flex-direction: column;
         margin: 0 0 0 2rem;
         }
@@ -49,6 +53,7 @@
         }
         @include desktop {
             font-size: 5rem;
+            margin: 3rem 0;
         }
     }
 }

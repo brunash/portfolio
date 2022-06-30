@@ -67,17 +67,18 @@ export const imageItems = [
   {
     id: 1,
     className: "skills__image",
-    alt: "HTML5",
+    alt: "JavaScript",
     height: "70px",
-    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg",
   },
   {
     id: 2,
     className: "skills__image",
-    alt: "CSS",
+    alt: "React",
     height: "70px",
-    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg",
   },
+
   {
     id: 3,
     className: "skills__image",
@@ -88,9 +89,9 @@ export const imageItems = [
   {
     id: 4,
     className: "skills__image",
-    alt: "React",
+    alt: "CSS",
     height: "70px",
-    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg",
   },
   {
     id: 5,
@@ -118,28 +119,28 @@ export const imageItems = [
     className: "skills__image github",
     alt: "Github",
     height: "70px",
-    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg",
   },
   {
     id: 9,
     className: "skills__image",
     alt: "Express",
     height: "70px",
-    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original-wordmark.svg",
   },
   {
     id: 10,
     className: "skills__image",
     alt: "Jira",
     height: "70px",
-    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg",
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-plain-wordmark.svg",
   },
   {
     id: 11,
     className: "skills__image",
-    alt: "JavaScript",
+    alt: "HTML5",
     height: "70px",
-    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg",
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg",
   },
   {
     id: 12,
@@ -147,5 +148,19 @@ export const imageItems = [
     alt: "Material UI",
     height: "70px",
     src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-original.svg",
+  },
+  {
+    id: 13,
+    className: "skills__image",
+    alt: "Mongodb",
+    height: "70px",
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg",
+  },
+  {
+    id: 13,
+    className: "skills__image",
+    alt: "MySQL",
+    height: "70px",
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-plain-wordmark.svg",
   },
 ];
