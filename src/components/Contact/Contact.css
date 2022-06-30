@@ -1,0 +1,44 @@
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.contact {
+  margin: 3rem 0;
+  margin-left: 5.5rem;
+  font-family: "NotoSans";
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  height: 100%;
+}
+@media screen and (min-width: 768px) {
+  .contact {
+    display: flex;
+    justify-content: center;
+    margin: 6rem 9rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .contact {
+    margin: 4rem auto;
+    justify-content: center;
+  }
+}
+
+.contact__title--container {
+  display: flex;
+  justify-content: center;
+}
+
+.button__container {
+  display: flex;
+  justify-content: center;
+}
+
+.contact__title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}/*# sourceMappingURL=Contact.css.map */

@@ -1,0 +1,56 @@
+@font-face {
+  font-family: "NotoSans";
+  src: url("../../Fonts/NotoSans-Regular.ttf") format("truetype");
+}
+.skills {
+  color: black;
+  padding-top: 4rem;
+  font-family: "NotoSans";
+}
+.skills__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+@media screen and (min-width: 768px) {
+  .skills__container {
+    gap: 2.5rem;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media screen and (min-width: 1280px) {
+  .skills__container {
+    grid-template-columns: repeat(5, 2fr);
+  }
+}
+.skills__title {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+@media screen and (min-width: 1280px) {
+  .skills__title {
+    font-size: 2rem;
+  }
+}
+.skills__image {
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: 1s;
+  height: 85px;
+}
+@media screen and (min-width: 768px) {
+  .skills__image {
+    height: 115px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .skills__image {
+    height: 175px;
+  }
+}
+
+.skills__image:hover {
+  transform: scale(1.3);
+  z-index: 1;
+}/*# sourceMappingURL=TechStack.css.map */

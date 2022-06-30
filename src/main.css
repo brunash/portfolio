@@ -1,0 +1,27 @@
+@import 'animate.css';
+@font-face {
+  font-family: "NotoSans";
+  src: url("../../Fonts/NotoSans-Regular.ttf") format("truetype");
+}
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background-color: #f7ece1;
+  color: #242038;
+  font-family: "NotoSans", Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.text-zone {
+  position: absolute;
+  left: 10%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 35%;
+  vertical-align: middle;
+  display: table-cell;
+  max-height: 91%;
+}/*# sourceMappingURL=main.css.map */

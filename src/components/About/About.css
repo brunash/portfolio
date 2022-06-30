@@ -1,0 +1,91 @@
+.container {
+  font-family: "NotoSans";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 4rem 0;
+  margin-left: 2.5rem;
+  text-align: center;
+  font-size: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    text-align: left;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+}
+.container__about {
+  width: 100%;
+  justify-content: space-around;
+}
+@media screen and (min-width: 768px) {
+  .container__about {
+    line-height: 3rem;
+  }
+}
+.container__information {
+  width: 75%;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .container__information {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.container__logos {
+  margin-top: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .container__logos {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0 2rem;
+  }
+}
+.container__name {
+  font-size: 1.85rem;
+  height: 4rem;
+}
+@media screen and (min-width: 768px) {
+  .container__name {
+    font-size: 3rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .container__name {
+    font-size: 5rem;
+    margin: 3rem 0;
+  }
+}
+
+.social {
+  transition: 2s ease;
+  color: #242038;
+  border-radius: 25px;
+  margin: 1rem;
+}
+
+.social:hover {
+  transform: scale(1.5);
+  cursor: pointer;
+  transition: 1.5s;
+}
+
+.cursor {
+  background-color: #111;
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}/*# sourceMappingURL=About.css.map */
