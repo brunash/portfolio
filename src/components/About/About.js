@@ -1,4 +1,4 @@
-import "../../styles/_colors.scss"
+import "../../styles/partials/_colors.scss";
 import React from "react";
 import "./About.scss";
 import TechStack from "../TechStack/TechStack";
@@ -85,7 +85,7 @@ const About = () => {
           // onMouseEnter={textEnter}
           // onMouseLeave={textLeave}
         >
-          <p>Hello, my name is</p>
+          <p>Hi, my name is</p>
 
           <div className="container__name">
             <AnimatedLetters
@@ -105,7 +105,7 @@ const About = () => {
                 "J",
                 "A"
               ]}
-              idx={1}
+              idx={3}
             />
           </div>
           <h3>A Front-End Web Developer</h3>

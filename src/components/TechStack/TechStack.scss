@@ -1,9 +1,9 @@
 @use '../../styles/partials/fonts'as *;
-@use '../../styles/mixins'as*;
+@use '../../styles/partials/mixins'as*;
 
 .skills{
     color: black;
-    padding-top: 2rem;
+    padding-top: 4rem;
     font-family: 'NotoSans';
     &__container {
     display:grid;
@@ -11,11 +11,11 @@
     gap: 2rem;
     @include tablet {
         gap: 2.5rem;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(4, 1fr);
     }
     @include desktop {
         // gap: 3rem;
-        grid-template-columns: repeat(4, 2fr);
+        grid-template-columns: repeat(5, 2fr);
     }
     }
     &__title{

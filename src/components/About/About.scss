@@ -1,5 +1,5 @@
-@use '../../styles/mixins'as *;
-@use '../../styles/colors'as *;
+@use '../../styles/partials/mixins'as *;
+@use '../../styles/partials/colors'as *;
 .container {
     font-family: 'NotoSans';
     display: flex;
@@ -15,6 +15,10 @@
         width: 100%;
         display: flex;
         align-items: center;
+    }
+    &__about {
+        width: 100%;
+        justify-content: space-around;
     }
     &__information {
         width: 75%;
@@ -40,6 +44,12 @@
     &__name {
         font-size: 1.85rem;
         height: 4rem;
+        @include tablet {
+            font-size: 3rem;
+        }
+        @include desktop {
+            font-size: 5rem;
+        }
     }
 }
 .social {
