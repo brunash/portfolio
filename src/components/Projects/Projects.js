@@ -11,9 +11,6 @@ import "./Projects.scss";
 const Projects = () => {
   return (
     <>
-      <div className="projects__title">
-        <h1>Portfolio</h1>
-      </div>
       <div className="projects">
         {projects.map((item) => (
           <a href={item.source} key={item.id} className="projects__cards">

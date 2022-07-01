@@ -77,7 +77,7 @@ const About = () => {
       <motion.div
         className="cursor"
         variants={variants}
-        animate={cursorVariant}
+        // animate={cursorVariant}
       />
       <div className="container__information">
         <section
