@@ -108,9 +108,7 @@ const About = () => {
               idx={3}
             />
           </div>
-          <h4>I am a Software Developer.</h4>
-          <p className="container__text">Currently I am focusing on the Front End side of development but
-            in the future my goal is to round up my knowledge around all associated fields.
+          <p className="container__text">I am Software Engineer experienced with JavaScript, C#, React.js, ASP.NET and .NET among other skills. Scroll through the page to find out more about me or send me a message to connect!
           </p>
         </section>
         <div
