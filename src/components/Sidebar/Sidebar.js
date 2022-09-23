@@ -10,8 +10,8 @@ const Sidebar = () => {
   return (
     <div className="nav-bar">
       <Link className="logo" to="/">
-        <img src={LogoS} alt="Logo" />
-        <img className="sub-logo" src={LogoSubtitle} alt="slobodan" />
+        <img src={LogoS} alt="" />
+        <img className="sub-logo" src={LogoSubtitle} alt="" />
       </Link>
       <nav>
         <NavLink activeclassname="active" className="about-link" to="/">
