@@ -7,6 +7,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import AnimatedLetters from "../AnimatedLetters/AnimatedLetters";
+import Sphere from "../Sphere/Sphere";
 
 let iconStyles = {
   fontSize: "50px",
@@ -108,9 +109,10 @@ const About = () => {
               idx={3}
             />
           </div>
-          <p className="container__text">I am Software Engineer experienced with JavaScript, C#, React.js, ASP.NET and .NET among other skills. Scroll through the page to find out more about me or send me a message to connect!
+          <p className="container__text">I am Software Engineer experienced with JavaScript, C#, .Net, React.js, ASP.NET and .NET among other skills. Scroll through the page to find out more about me or send me a message to connect!
           </p>
         </section>
+        <Sphere/>
         <div
           className="container__logos"
           // onMouseEnter={textEnter}
