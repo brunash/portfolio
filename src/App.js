@@ -3,18 +3,7 @@ import './main.scss';
 import ProjectsList from './components/ProjectsList';
 import Contact from './components/Contact/Contact';
 
-const projects = [
-  {
-    title: 'Project 1',
-    description: 'Description of your first project.',
-    link: '',
-  },
-  {
-    title: 'Project 2',
-    description: 'Description of your second project.',
-    link: '',
-  },
-];
+const projects = [];
 
 function App() {
   return (
