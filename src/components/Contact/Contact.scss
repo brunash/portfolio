@@ -1,44 +1,79 @@
 @use '../../styles/partials/mixins'as *;
 @use '../../styles/partials/colors'as *;
 
-form{
-    display: flex;
-    flex-direction: column;
-    gap: 1.2rem;
-    
-}
+
 .contact {
-    // margin: auto 1rem auto 3rem;
-    margin: 3rem 0;
-    margin-left: 5.5rem;
-    font-family: 'NotoSans';
-    color: $maximum-blue-purple;
+    margin: 0 auto;
+    font-family: 'Montserrat', 'Inter', 'Segoe UI', 'Noto Sans', Arial, sans-serif;
+    color: #e6e6e6;
     display: flex;
     flex-direction: column;
-    width: 75%;
-    height: 100%;
-    @include tablet {
-        display: flex;
-        justify-content: center;
-        margin: 6rem 9rem;
-    }
-    @include desktop {
-        margin: 4rem auto;
-        justify-content: center;
-    }
+    width: 100%;
+    max-width: 520px;
+    padding: 0 0 0 0;
+    box-sizing: border-box;
 }
 
 .contact__title--container {
     display: flex;
     justify-content: center;
-} 
+    margin-bottom: 1.2rem;
+}
+
+.contact__title {
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: #7f9cf5;
+    letter-spacing: 0.5px;
+    text-shadow: 0 1px 8px #181c2f;
+    margin-bottom: 0.5rem;
+}
+
+.contact__form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+}
+
+
+.contact__input .MuiInputBase-root {
+    background: rgba(44, 50, 80, 0.92);
+    border-radius: 10px;
+    color: #f8fafd;
+    font-family: 'Montserrat', 'Inter', 'Segoe UI', 'Noto Sans', Arial, sans-serif;
+    border: 1.5px solid #2d3250;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+.contact__input label, .contact__input .MuiInputBase-input {
+    color: #f8fafd !important;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+}
+.contact__input .MuiOutlinedInput-notchedOutline {
+    border-color: #7f9cf5 !important;
+    border-width: 1.5px;
+}
+.contact__input .Mui-focused .MuiOutlinedInput-notchedOutline {
+    border-color: #f7c873 !important;
+    box-shadow: 0 0 0 2px #7f9cf555;
+}
+.contact__input .MuiInputBase-root:hover .MuiOutlinedInput-notchedOutline {
+    border-color: #7f9cf5 !important;
+}
+.contact__input .MuiInputBase-input::placeholder {
+    color: #b0b8c9;
+    opacity: 1;
+}
 
 .button__container {
     display: flex;
     justify-content: center;
+    margin-top: 0.5rem;
 }
-.contact__title{
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin-bottom: 1.5rem;
+
+@media (max-width: 600px) {
+    .contact {
+        padding: 16px 4px 12px 4px;
+        max-width: 98vw;
+    }
 }
